@@ -284,7 +284,7 @@
 	// Test via a getter in the options object to see if the passive property is accessed
         var supportsPassive = false;
         try {
-            var Popts = Object.defineProperty({}, 'passive', {
+            var Popts = Object.defineProperty({}, "passive", {
                 get: function() {
                     supportsPassive = true;
                 }
