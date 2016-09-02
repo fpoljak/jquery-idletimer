@@ -282,15 +282,15 @@
         }
 
 	// Test via a getter in the options object to see if the passive property is accessed
-	var supportsPassive = false;
-	try {
-	  var opts = Object.defineProperty({}, 'passive', {
-	    get: function() {
-	      supportsPassive = true;
-	    }
-	  });
-	  window.addEventListener("test", null, opts);
-	} catch (e) {}
+        var supportsPassive = false;
+        try {
+            var Popts = Object.defineProperty({}, 'passive', {
+                get: function() {
+                    supportsPassive = true;
+                }
+            });
+            window.addEventListener("test", null, Popts);
+        } catch (e) {}
 
         /* (intentionally not documented)
          * Handles a user event indicating that the user isn't idle. namespaced with internal idleTimer
