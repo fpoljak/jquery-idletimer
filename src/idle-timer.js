@@ -299,9 +299,7 @@
          * @param {Event} event A DOM2-normalized event object.
          * @return {void}
          */
-        jqElem.on($.trim((opts.events + " ").split(" ").join("._idleTimer ")), function (e) {
-            handleEvent(e);
-        });
+        jqElem.on($.trim((opts.events + " ").split(" ").join("._idleTimer ")), handleEvent);
 
         if (opts.timerSyncId) {
             $(window).bind("storage", handleEvent);
