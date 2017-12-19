@@ -293,7 +293,7 @@
             window.addEventListener("test", null, Popts);
         } catch (e) {}
 	*/
-	    
+
         /* (intentionally not documented)
          * Handles a user event indicating that the user isn't idle. namespaced with internal idleTimer
          * @param {Event} event A DOM2-normalized event object.
